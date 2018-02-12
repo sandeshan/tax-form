@@ -4,6 +4,7 @@ import Paper from 'material-ui/Paper';
 import TextField from 'material-ui/TextField';
 import Divider from 'material-ui/Divider';
 
+// Content for Part 3 of Stepper 
 class FormPart3 extends Component {
 
     render() {

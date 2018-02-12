@@ -5,9 +5,8 @@ import TextField from 'material-ui/TextField';
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
 import Checkbox from 'material-ui/Checkbox';
 import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn, } from 'material-ui/Table';
-import HelpIcon from 'material-ui/svg-icons/action/help';
-import ReactTooltip from 'react-tooltip'
 
+// Content for Part 2 of Stepper 
 class FormPart2 extends Component {
 
     render() {
@@ -72,10 +71,7 @@ class FormPart2 extends Component {
                         <div className='form2-div-2'>
                             <form>
                                 <Paper zDepth={1} className="field-group">
-                                    <h4>Partner’s share of profit, loss, and capital <HelpIcon data-tip data-for='part2-tooltip-1' /></h4>
-                                    <ReactTooltip id='part2-tooltip-1' place="right" type="info" effect="solid">
-                                        See Instructions
-                                    </ReactTooltip>
+                                    <h4>Partner’s share of profit, loss, and capital</h4>
                                     <Table selectable={false} className="form-table">
                                         <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
                                             <TableRow>
@@ -187,7 +183,7 @@ class FormPart2 extends Component {
                         </div>
                     </CardText>
                 </Card>
-            </div>
+            </div>            
         );
     }
 }

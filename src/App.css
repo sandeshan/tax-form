@@ -7,28 +7,28 @@ html, body {
   height: 100%;
 }
 
-.content {
-  height: calc(100% - 70px);
-  overflow-y: auto;
-  overflow-x: hidden;
+/* Overwrite header margins present in Material UI styles */
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-#root {
-  position: fixed;
-  width: 100%;
-  height: calc(100vh - 50px);
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 20px;
-}
+/* header styles */
 
 .App-header {
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
   height: 40px;
   padding: 10px;
   display: flex;
+}
+
+.App-title {
+  flex-wrap: wrap;
+  font-size: 16px;
+  margin-top: 0.5em;
 }
 
 .Header-year {
@@ -43,40 +43,89 @@ html, body {
   -webkit-text-stroke: 0.5px #979797;
 }
 
-.App-title {
-  flex-wrap: wrap;
-  font-size: 20px;
-  margin-top: 0.5em;
-}
+/* end header styles */
+
+/* footer styles */
 
 .App-footer {
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
   height: 50px;
   padding: 10px;
   padding-top: 15px;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+/* end footer styles */
+
+/* main content styles */
+
+.content {
+  height: calc(100% - 70px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#root {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 50px);
 }
-
-/* --- */
 
 .form-main-div {
-  width: 90%;
-  /* max-width: 900px; */
+  width: 95%;
   margin: auto;
   margin-bottom: 1em;
 }
 
+.field-group {
+  padding: 10px;
+  padding-top: 20px
+}
+
+.field-separator {
+  padding-bottom: 10px;
+}
+
+.form-table td {
+  padding: 0 !important;
+}
+
+.small-text-field {
+  width: 15% !important;
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #dbe3eb;
+}
+
+.large-text-field {
+  width: 84% !important;
+  border-width: 0.5px 0.5px 0.5px 0;
+  border-style: solid;
+  border-color: #dbe3eb;
+}
+
+.divider {
+  width: 99%;
+}
+
+/* end main content styles */
+
+/* styles applicable only to large(non-mobile) screens */
 @media screen and (min-width: 768px) {
 
+  /* Larger Header text for big screens */
+  .Header-year {
+    font-size: 48px !important;
+    margin-top: -0.1em;
+  }
+
+  .App-title {
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+   /* Provide 'flex' view in part-2 and part-3 of Form
+      to accomodate two divs next to each other. */
   .form-2-content {
     display: flex;
   }
@@ -103,62 +152,26 @@ html, body {
     margin-left: 1em;
   }
 
+  /* limit footer buttons width */
   .footer-btns {
     width: 75%;
     margin: auto;
-  }
+  } 
 
-  .Header-year {
-    font-size: 48px !important;
-    margin-top: -0.1em;
-  }
-
-  .App-title {
-    font-size: 36px;
-    margin-top: 0;
+   /* Help-btn margin for big screens */
+  .help-btn {
+    margin-top: -5px !important;
   }
 
 }
 
-.field-group {
-  padding: 10px;
-  padding-top: 20px
-}
+/* end large-screen styles */
 
-.field-separator {
-  padding-bottom: 10px;
-  border-bottom: 1px solid;
-}
-
-h1, h2, h3, h4 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.form-table td {
-  padding: 0 !important;
-}
-
-.small-text-field {
-  width: 25% !important;
-  border-width: 0.5px;
-  border-style: solid;
-  border-color: #dbe3eb;
-}
-
-.large-text-field {
-  width: 74% !important;
-  border-width: 0.5px 0.5px 0.5px 0;
-  border-style: solid;
-  border-color: #dbe3eb;
-}
-
-.divider {
-  width: 99%;
-}
+/* custom scrollbar styles */
 
 .content::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: #F5F5F5;
 }
@@ -169,7 +182,10 @@ h1, h2, h3, h4 {
 }
 
 .content::-webkit-scrollbar-thumb {
-  border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  border-radius: 10px;
   background-color: #555;
 }
+
+/* end custom scrollbar styles */
