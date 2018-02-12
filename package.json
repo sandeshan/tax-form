@@ -7,7 +7,7 @@
     "email": "sanaik@syr.edu",
     "url": "http://www.sandeshnaik.com/"
   },
-  "homepage": "http://www.sandeshnaik.com/tax-form",
+  "homepage": "https://sandeshan.github.io/projects/tax-form",
   "dependencies": {
     "material-ui": "^0.20.0",
     "react": "^16.2.0",

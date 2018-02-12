@@ -84,6 +84,7 @@ class FormPart3 extends Component {
                                         floatingLabelText="10. Net section 1231 gain (loss)"
                                         fullWidth={true}
                                     /><br />
+
                                     <br />11. Other income (loss)<br/>
                                     <TextField id='input-11-a1' hintText="" className= "small-text-field" underlineShow={false} />
                                     <TextField id='input-11-1' hintText="" className= "large-text-field" underlineShow={false} />
@@ -97,11 +98,13 @@ class FormPart3 extends Component {
                                     <TextField id='input-11-a4' hintText="" className= "small-text-field" underlineShow={false} />
                                     <TextField id='input-11-4' hintText="" className= "large-text-field" underlineShow={false} />
                                     <Divider className="divider"/>
+
                                     <TextField
                                         hintText=""
                                         floatingLabelText="12. Section 179 deduction"
                                         fullWidth={true}
-                                    /><br />
+                                    /><br /><br />
+
                                     <br />13. Other deductions<br />
                                     <TextField id='input-13-a1' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-13-1' hintText="" className="large-text-field" underlineShow={false} />
@@ -114,9 +117,8 @@ class FormPart3 extends Component {
                                     <Divider className="divider" />
                                     <TextField id='input-13-a4' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-13-4' hintText="" className="large-text-field" underlineShow={false} />
-                                    <Divider className="divider" />
-                                </Paper>
-                                <br />
+                                    <Divider className="divider" /><br />
+                                </Paper>                                
                             </form>
                         </div>
                         <div className='form3-div-2'>
@@ -132,6 +134,7 @@ class FormPart3 extends Component {
                                     <TextField id='input-14-a3' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-14-3' hintText="" className="large-text-field" underlineShow={false} />
                                     <Divider className="divider" />
+
                                     <br />15. Credits<br />
                                     <TextField id='input-15-a1' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-15-1' hintText="" className="large-text-field" underlineShow={false} />
@@ -140,9 +143,10 @@ class FormPart3 extends Component {
                                     <TextField id='input-15-2' hintText="" className="large-text-field" underlineShow={false} />
                                     <Divider className="divider" />
                                     <TextField id='input-15-a3' hintText="" className="small-text-field" underlineShow={false} />
-                                    <TextField id='input-15-3' hintText="" className="large-text-field" underlineShow={false} />
+                                    <TextField id='input-15-3' hintText="" className="large-text-field" underlineShow={false} />                                    
                                     <Divider className="divider" />
-                                    <br />16. Foreign transactions<br />
+
+                                    <br />16. Foreign transactions<br />                                    
                                     <TextField id='input-16-a1' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-11-1' hintText="" className="large-text-field" underlineShow={false} />
                                     <Divider className="divider" />
@@ -161,6 +165,7 @@ class FormPart3 extends Component {
                                     <TextField id='input-16-a6' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-16-6' hintText="" className="large-text-field" underlineShow={false} />
                                     <Divider className="divider" />
+
                                     <br />17. Alternative minimum tax (AMT) items<br />
                                     <TextField id='input-17-a1' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-17-1' hintText="" className="large-text-field" underlineShow={false} />
@@ -171,6 +176,7 @@ class FormPart3 extends Component {
                                     <TextField id='input-17-a3' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-17-3' hintText="" className="large-text-field" underlineShow={false} />
                                     <Divider className="divider" />
+
                                     <br />18. Tax-exempt income and nondeductible expenses<br />
                                     <TextField id='input-18-a1' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-18-1' hintText="" className="large-text-field" underlineShow={false} />
@@ -181,6 +187,7 @@ class FormPart3 extends Component {
                                     <TextField id='input-18-a3' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-18-3' hintText="" className="large-text-field" underlineShow={false} />
                                     <Divider className="divider" />
+
                                     <br />19. Distributions<br />
                                     <TextField id='input-19-a1' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-19-1' hintText="" className="large-text-field" underlineShow={false} />
@@ -191,6 +198,7 @@ class FormPart3 extends Component {
                                     <TextField id='input-19-a3' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-19-3' hintText="" className="large-text-field" underlineShow={false} />
                                     <Divider className="divider" />
+
                                     <br />20. Other information<br />
                                     <TextField id='input-20-a1' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-20-1' hintText="" className="large-text-field" underlineShow={false} />
@@ -203,7 +211,8 @@ class FormPart3 extends Component {
                                     <Divider className="divider" />
                                     <TextField id='input-20-a4' hintText="" className="small-text-field" underlineShow={false} />
                                     <TextField id='input-20-4' hintText="" className="large-text-field" underlineShow={false} />
-                                    <Divider className="divider" />
+                                    <Divider className="divider" /><br />
+
                                 </Paper>
                             </form>
                         </div>

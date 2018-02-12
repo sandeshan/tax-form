@@ -25,14 +25,14 @@ class FormPart2 extends Component {
                                         hintText=""
                                         floatingLabelText="Partner’s identifying number"
                                         fullWidth={true}
-                                    /><br />
+                                    /><br /><br />
                                     <TextField
                                         hintText=""
                                         floatingLabelText="Partner’s name, address, city, state, and ZIP code"
                                         fullWidth={true}
                                         multiLine={true}
                                         rows={3}
-                                    />
+                                    /><br /><br /><br /><br />
                                 </Paper>
                                 <br />
                                 <Paper zDepth={1} className="field-group">
@@ -63,7 +63,7 @@ class FormPart2 extends Component {
                                     /><br /><br />
                                     <Checkbox
                                         label="If this partner is a retirement plan (IRA/SEP/Keogh/etc.), check here"
-                                    />
+                                    /><br /><br />
                                 </Paper>
 
                             </form>
@@ -83,18 +83,18 @@ class FormPart2 extends Component {
                                         <TableBody displayRowCheckbox={false}>
                                             <TableRow>
                                                 <TableRowColumn>Profit</TableRowColumn>
-                                                <TableRowColumn><TextField id="a-1" />%</TableRowColumn>
-                                                <TableRowColumn><TextField id="a-2" />%</TableRowColumn>
+                                                <TableRowColumn><TextField id="a-1" style={{ width: '85%' }} />%</TableRowColumn>
+                                                <TableRowColumn><TextField id="a-2" style={{ width: '85%' }} />%</TableRowColumn>
                                             </TableRow>
                                             <TableRow>
                                                 <TableRowColumn>Loss</TableRowColumn>
-                                                <TableRowColumn><TextField id="a-3" />%</TableRowColumn>
-                                                <TableRowColumn><TextField id="a-4" />%</TableRowColumn>
+                                                <TableRowColumn><TextField id="a-3" style={{ width: '85%' }} />%</TableRowColumn>
+                                                <TableRowColumn><TextField id="a-4" style={{ width: '85%' }} />%</TableRowColumn>
                                             </TableRow>
                                             <TableRow>
                                                 <TableRowColumn>Capital</TableRowColumn>
-                                                <TableRowColumn><TextField id="a-5" />%</TableRowColumn>
-                                                <TableRowColumn><TextField id="a-6" />%</TableRowColumn>
+                                                <TableRowColumn><TextField id="a-5" style={{ width: '85%' }} />%</TableRowColumn>
+                                                <TableRowColumn><TextField id="a-6" style={{ width: '85%' }} />%</TableRowColumn>
                                             </TableRow>
                                         </TableBody>
                                     </Table><br/>
@@ -164,7 +164,7 @@ class FormPart2 extends Component {
                                             style={{ maxWidth: 200 }}
                                         />
                                     </RadioButtonGroup>
-                                    <TextField id="a-5" fullWidth={true} /><br /><br />
+                                    <TextField id="a-5" fullWidth={true} hintText="If Others, Please Explain Here" /><br /><br />
                                     <h4>Did the partner contribute property with a built-in gain or loss?</h4><br />
                                     <RadioButtonGroup name="m-group" defaultSelected={false} style={{ display: 'flex' }}>
                                         <RadioButton
@@ -177,7 +177,7 @@ class FormPart2 extends Component {
                                             label="No"
                                             style={{ maxWidth: 200 }}
                                         />
-                                    </RadioButtonGroup>
+                                    </RadioButtonGroup><br />
                                 </Paper>
                             </form>
                         </div>

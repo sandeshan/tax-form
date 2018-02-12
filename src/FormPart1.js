@@ -37,7 +37,7 @@ class FormPart1 extends Component {
                             /><br /><br />
                             <Checkbox
                                 label="Check if this is a publicly traded partnership (PTP)"
-                            />
+                            /><br />
                         </Paper><br />                        
                     </form>
                 </CardText>

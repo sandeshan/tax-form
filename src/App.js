@@ -124,7 +124,7 @@ class App extends Component {
           <div className="App-footer">
             <div className="footer-btns">
               <FlatButton
-                label="Back"
+                label="Previous"
                 secondary={true}
                 disabled={stepIndex === 0}
                 onClick={this.handlePrev}

@@ -40,7 +40,7 @@ h4 {
 
 .year-span {
   color: #ffffff;
-  -webkit-text-stroke: 0.5px #979797;
+  -webkit-text-stroke: 1px #979797;
 }
 
 /* end header styles */
@@ -75,6 +75,11 @@ h4 {
   width: 95%;
   margin: auto;
   margin-bottom: 1em;
+}
+
+.form2-div-2,
+.form3-div-2 {
+  margin-top: 15px;
 }
 
 .field-group {
@@ -137,6 +142,7 @@ h4 {
   .form2-div-2 {
     width: 60%;
     margin-left: 1em;
+    margin-top: 0;
   }
 
   .form-3-content {
@@ -150,6 +156,7 @@ h4 {
   .form3-div-2 {
     width: 50%;
     margin-left: 1em;
+    margin-top: 0;
   }
 
   /* limit footer buttons width */
@@ -160,7 +167,7 @@ h4 {
 
    /* Help-btn margin for big screens */
   .help-btn {
-    margin-top: -5px !important;
+    margin-top: -3px !important;
   }
 
 }
