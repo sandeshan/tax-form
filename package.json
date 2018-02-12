@@ -1,0 +1,25 @@
+{
+  "name": "tax-form",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Sandesh Naik",
+    "email": "sanaik@syr.edu",
+    "url": "http://www.sandeshnaik.com/"
+  },
+  "homepage": "http://www.sandeshnaik.com/tax-form",
+  "dependencies": {
+    "material-ui": "^0.20.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0",
+    "react-tap-event-plugin": "^3.0.2",
+    "react-tooltip": "^3.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
